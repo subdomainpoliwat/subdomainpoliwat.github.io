@@ -1,0 +1,207 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* STYLES (optional) */
+.container1 {
+}
+
+/* FLEXBOX ABSOLUTE CENTER */
+html,
+body {
+  height: 100%;
+}
+.container1 {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+}
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ff4b4b;
+  display: grid;
+}
+.mic {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-left:800px;
+}
+
+.head-container {
+  position: relative;
+  height: 300px;
+  width: 276px;
+  margin: auto;
+}
+
+.main-base-head {
+  position: absolute;
+  height: 75%;
+  width: 77%;
+  background: #000f4c;
+  right: 0;
+}
+
+.head-neck {
+    position: absolute;
+    height: 40%;
+    width: 46%;
+    background: #000f4c;
+    right: 0;
+    bottom: -5%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    -webkit-transform: rotateX(-36deg);
+    transform: rotateX(-36deg);
+}
+
+.head-eye {
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background: #ff4b4b;
+    top: 80px;
+    left: 84px;
+    border-radius: 100%;
+}
+
+.head-eye-lid {
+  position: absolute;
+  height: 16px;
+  width: 32px;
+  background: #000f4c;
+  left: 77px;
+  top: 62px;
+  animation: eyeClosing 8s infinite;
+  animation-direction: inherit;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: steps(11, end);
+}
+
+@keyframes  eyeClosing {
+  0% {
+    top: 62px;
+  }
+  /* 2 */
+  15% {
+    top: 62px;
+  }
+  25% {
+    top: 80px;
+  }
+  40% {
+    top: 62px;
+  }
+  55% {
+    top: 80px;
+  }
+  75% {
+    top: 80px;
+  }  
+  100% {
+    top: 62px;
+  }
+}
+
+.head-nose {
+  position: absolute;
+  height: 47%;
+  width: 21%;
+  left: 11%;
+  background: linear-gradient(93deg, transparent 8px, #000f4c 10px, #000f4c 100%);
+  -webkit-transform: skew(-9deg);
+  transform: skew(-9deg);
+}
+
+.top-head-back {
+  position: absolute;
+  height: 42%;
+  width: 72%;
+  background: #ff4b4b;
+  right: 0%;
+  top: -24%;
+  border-radius: 50%;
+  border: 14px solid #000f4c;
+  overflow: hidden;
+}
+.inner-stair {
+    position: absolute;
+    height: 43%;
+    width: 95%;
+    background: white;
+    transform: rotate(40deg) skew(-51deg);
+    z-index: 9999999;
+    top: 87%;
+    left: 12%;
+}
+.stairs {
+  position: absolute;
+  right: -58px;
+  top: -81px;
+  width: 123%;
+  animation: stairsMoving 2.4s infinite;
+  animation-direction: inherit;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: steps(35);
+}
+
+@keyframes stairsMoving {
+  0% {
+    right: -46px;
+    top: -134px;
+  }
+  100% {
+    right: 18px;
+    top: -55px;
+  }
+}
+.stair {
+  position: relative;
+  height: 39px;
+  width: 90%;
+  margin-left: 1px;
+  background: #000f4c;
+  right: 0;
+  float: right;
+  transform: skewY(-14deg);
+}
+.stair-1 {
+  right: -104px;
+}
+.stair-2 {
+  right: -73px;
+}
+.stair-3 {
+  right: -40px;
+}
+.stair-4 {
+  right: -8px;
+}
+.stair-5 {
+  right: 23px;
+  height: 53px;
+}
+
+
+.stair-plus-1 {
+  right: -160px;
+}
+
+
+.stair-pluse-2 {
+  right: -136px;
+}
+.stair-5 > .inner-stair {
+    top: -6px;
+    width: 40%;
+    height: 17px;
+    left: 40px;
+}
